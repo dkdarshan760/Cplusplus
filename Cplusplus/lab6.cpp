@@ -31,7 +31,7 @@ private:
 	int m_centimeter = 0;
 };
 
-int mainalsfdjque() {
+int affsdjld() {
 	float dist = 12.3;
 	Distance distance(dist);
 	distance.display();
@@ -98,12 +98,13 @@ Imperial::Imperial(Metric metric) {
 		}
 }
 
-int main() {
+int alfsfddklkasfjlkdlkf() {
 	Metric metric(32.3, 23);
 	Imperial imperial(metric);
 	Metric metric2(imperial);
 	imperial.display();
 	metric2.display();
+    return 0;
 }
 
 
@@ -190,7 +191,7 @@ public:
         percs();
     }
 };
-int main3() {
+int lsdjlakjfdlsajf() {
     TypeIns TI;
     TI.get();
     TI.show();
@@ -254,7 +255,7 @@ public:
         cout << this << endl;
     }
 };
-int main4() {
+int lasjdfklasdlkfdlskcnoiwqe() {
     person p1, p2;
     student s1, s2;
     employee e1, e2;
@@ -319,6 +320,73 @@ public:
         cout << "The sum from base and subClassed : " << a.m_real + m_real << " + i" << a.m_im + m_im << endl;
     }
     
+
+
+#include <iostream>
+
+class Complex
+{
+public:
+    void getIn() {
+        cout << "Enter real and imaginary :";
+        cin >> m_real >> m_imag;
+    }
+    void display()
+    {
+        cout << "The complex number is: " << m_real << " + i" << m_imag << endl;
+    }
+
+    float m_real;
+    float m_imag;
+};
+
+class Inherit : public Complex
+{
+public:
+    friend class CFriend;
+    void add(Complex a)
+    {
+        cout << "The sum from base and inherited : " << a.m_real + m_real << " + i" << a.m_imag + m_imag << endl;
+    }
+    
+};
+class CFriend
+{
+public:
+    void diff(Complex a)
+    {
+        cout << "The difference of base and friend: " << a.m_real - m_real << " + i" << a.m_imag - m_imag << endl;
+    }
+    void getIn() {
+        cout << "Enter real and imaginary :";
+        cin >> m_real >> m_imag;
+    }
+    void display()
+    {
+        cout << "The complex number is: " << m_real << " + i" << m_imag << endl;
+    }
+private:
+    float m_real, m_imag;
+
+};
+int main5()
+{
+    Complex a;
+    cout << "For base class: " << endl;
+    a.getIn();
+    a.display();
+    Inherit b;
+    cout << "For inherited class: " << endl;
+    b.getIn();
+    b.display();
+    b.add(a);
+    CFriend c;
+    cout << "For friend class: " << endl;
+    c.getIn();
+    c.display();
+    c.diff(a);
+    return 0;
+}
 };
 class CFriend
 {
@@ -339,7 +407,7 @@ private:
     float m_real, m_im;
 
 };
-int main5()
+int main()
 {
     Complex a;
     cout << "For base class: " << endl;

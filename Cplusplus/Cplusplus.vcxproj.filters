@@ -33,5 +33,8 @@
     <ClCompile Include="lab6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lab7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
