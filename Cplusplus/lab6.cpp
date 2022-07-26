@@ -407,7 +407,7 @@ private:
     float m_real, m_im;
 
 };
-int main()
+int dlkajfaplsnmjvopkwqejeflkmnweqofjewioajnf()
 {
     Complex a;
     cout << "For base class: " << endl;
