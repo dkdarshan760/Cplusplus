@@ -147,7 +147,7 @@ struct Account
 };
 
 
-int main()
+int lsddajfdlasfdjj()
 {
 	int N;
 	cout << "Enter N:";

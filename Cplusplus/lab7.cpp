@@ -60,7 +60,7 @@ private:
 class Trapezoid : public Shape
 {
 public:
-	Trapezoid(int a, int b, int h) : m_a(a), m_b(b), m_h(h) {
+	Trapezoid(float a, float b, float h) : m_a(a), m_b(b), m_h(h) {
 
 	}
 	float area()
@@ -131,7 +131,7 @@ public:
 	}
 };
 
-int main2() {
+int main234234() {
 	Manager man;
 	man.function();
 	return 0;
@@ -190,7 +190,7 @@ private:
 	std::string college;
 };
 
-int mainfdgd() {
+int maindsalfjdaslmdlksacm() {
 	Science science("Darshan", 18, "Pulchowk");
 	Medicine medicine("manastha", 21, "medCollege");
 	Engineering engineering("Rame", 24, "Thapathali");
@@ -251,7 +251,7 @@ private:
 };
 
 
-int hjgjhgjhgjh()
+int main()
 {
 	Bike bike(45, 23543);
 	Car car(4, 20, 2344);
